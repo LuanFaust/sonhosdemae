@@ -15,7 +15,7 @@ body{
 *{
     margin: 0;
     padding: 0;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: initial; 
 }
 
 header{
@@ -50,13 +50,6 @@ h1{
     flex-direction: column;
     
 }
-#principal{
-    background-image: url('assets/logotipoBranco.png');
-    background-position: 1vw center;
-    height: 110vh;
-    clear: both;
-    background-size: 100%;
-}
 
 #logo img{
     width: 110px;
@@ -75,6 +68,32 @@ h1{
     text-shadow: 1px 1px 1px #111111;
 }
 
+#pageHome{
+    height: 170vh;
+    background: url('assets/logotipoBranco.png') no-repeat;
+    background-position: 1vw center;    
+    clear: both;
+    background-size: 100%;
+}
+
+#pageHome .content {
+    width: 90%;
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#page-home header {
+
+    margin-top: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /* Class*/
 .container{
     width: 960px;
@@ -89,6 +108,7 @@ h1{
 
 .container a{
     color: #FF9AAC;
+    font-size: x-large;
 }
 .container a:hover{
     color:#B3E7F4;
